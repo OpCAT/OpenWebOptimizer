@@ -1,7 +1,8 @@
 This Utility is combination of GZip compression and HTTP caching could be used as filter to improve any web application performance
 
 Usage: 
-GZip Comprssion: add below code in web.xml GZIPFiltercom.opcat.gzip.GZIPFilterGZIPFilter*
+GZip Comprssion: add below code in web.xml GZIPFiltercom.opcat.gzip.GZIPFilterGZIPFilter
+=========================================================================================
 <filter>
 		<filter-name>GZIPFilter</filter-name>
 		<filter-class>com.opcat.gzip.GZIPFilter</filter-class>
@@ -12,7 +13,7 @@ GZip Comprssion: add below code in web.xml GZIPFiltercom.opcat.gzip.GZIPFilterGZ
 	</filter-mapping>
 
 
-
+===========================================================================================================
 Caching add the below code in web.xml 
 <filter>
 	<filter-name>jsCache</filter-name>
@@ -31,3 +32,4 @@ Caching add the below code in web.xml
 		<filter-name>jsCache</filter-name>
 		<url-pattern>*</url-pattern>
 	</filter-mapping>
+=========================================================================================================
