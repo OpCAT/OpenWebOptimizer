@@ -1,25 +1,19 @@
-This Utility is combination of GZip compression and HTTP caching could be used as filter to improve any web application performance
+#This Utility is combination of GZip compression and HTTP caching could be used as filter to improve any web application performance
 
-Usage: GZip Comprssion: add below code in web.xml to apply GZip compression
+#Usage: GZip Comprssion: add below code in web.xml to apply GZip compression
 
-=========================================================================================
-
-
-
-<<< <filter>
+<div>
 		<filter-name>GZIPFilter</filter-name>
 		<filter-class>com.opcat.gzip.GZIPFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>GZIPFilter</filter-name>
 		<url-pattern>*</url-pattern>
-	</filter-mapping> >>
+	</filter-mapping> </div>
 
+##Caching add the below code in web.xml to apply caching filter
 
-
-Caching add the below code in web.xml to apply caching filter
-
-<<<  <filter>
+<div>  <filter>
 	<filter-name>jsCache</filter-name>
 		<filter-class>com.opcat.caching.CacheFilter</filter-class>
 		<init-param>
@@ -35,6 +29,6 @@ Caching add the below code in web.xml to apply caching filter
 	<filter-mapping>
 		<filter-name>jsCache</filter-name>
 		<url-pattern>*</url-pattern>
-	</filter-mapping> >>>
+	</filter-mapping> </div>
 
 
