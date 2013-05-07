@@ -6,20 +6,20 @@ Usage: GZip Comprssion: add below code in web.xml to apply GZip compression
 
 
 
-<!-- <filter>
+<<< <filter>
 		<filter-name>GZIPFilter</filter-name>
 		<filter-class>com.opcat.gzip.GZIPFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>GZIPFilter</filter-name>
 		<url-pattern>*</url-pattern>
-	</filter-mapping> -->
+	</filter-mapping> >>
 
 
-===========================================================================================================
+
 Caching add the below code in web.xml to apply caching filter
 
-<!--  <filter>
+<<<  <filter>
 	<filter-name>jsCache</filter-name>
 		<filter-class>com.opcat.caching.CacheFilter</filter-class>
 		<init-param>
@@ -35,8 +35,6 @@ Caching add the below code in web.xml to apply caching filter
 	<filter-mapping>
 		<filter-name>jsCache</filter-name>
 		<url-pattern>*</url-pattern>
-	</filter-mapping> -->
-=========================================================================================================
-
+	</filter-mapping> >>>
 
 
