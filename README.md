@@ -1,12 +1,8 @@
-OpenWebOptimizer
-=============
-
 This Utility is combination of GZip compression and HTTP caching could be used as filter to improve any web application performance
 
-
-
-Usage: GZip Comprssion add below code in web.xml
-  <filter>
+Usage: 
+GZip Comprssion: add below code in web.xml GZIPFiltercom.opcat.gzip.GZIPFilterGZIPFilter*
+<filter>
 		<filter-name>GZIPFilter</filter-name>
 		<filter-class>com.opcat.gzip.GZIPFilter</filter-class>
 	</filter>
@@ -16,7 +12,8 @@ Usage: GZip Comprssion add below code in web.xml
 	</filter-mapping>
 
 
-Caching add the below code in web.xml
+
+Caching add the below code in web.xml 
 <filter>
 	<filter-name>jsCache</filter-name>
 		<filter-class>com.opcat.caching.CacheFilter</filter-class>
