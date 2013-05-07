@@ -2,19 +2,19 @@
 
 #Usage: GZip Comprssion: add below code in web.xml to apply GZip compression
 
-<div>
+	<filter>
 		<filter-name>GZIPFilter</filter-name>
 		<filter-class>com.opcat.gzip.GZIPFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>GZIPFilter</filter-name>
 		<url-pattern>*</url-pattern>
-	</filter-mapping> </div>
+	</filter-mapping> 
 
-##Caching add the below code in web.xml to apply caching filter
+#Caching add the below code in web.xml to apply caching filter
 
-<div>  <filter>
-	<filter-name>jsCache</filter-name>
+	<filter>
+		<filter-name>jsCache</filter-name>
 		<filter-class>com.opcat.caching.CacheFilter</filter-class>
 		<init-param>
 			<param-name>private</param-name>
@@ -29,6 +29,6 @@
 	<filter-mapping>
 		<filter-name>jsCache</filter-name>
 		<url-pattern>*</url-pattern>
-	</filter-mapping> </div>
+	</filter-mapping>
 
 
