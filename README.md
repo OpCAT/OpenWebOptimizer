@@ -31,4 +31,6 @@
 		<url-pattern>*</url-pattern>
 	</filter-mapping>
 
-
+#####Building the project
+1. Run "mvn package"
+2. Snapshot can be found under "target/OpenWebOptimizer-1.0-SNAPSHOT.jar"
