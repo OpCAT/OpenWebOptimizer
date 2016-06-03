@@ -33,6 +33,7 @@ public class GZIPFilter implements Filter {
 				GZIPResponseWrapper gzipresponsewrapper = new GZIPResponseWrapper(
 						httpservletresponse);
 				filterchain.doFilter(servletrequest, gzipresponsewrapper);
+				gzipresponsewrapper.setHeader("Vary", "Accept-Encoding");
 				gzipresponsewrapper.finishResponse();
 				return;
 			}

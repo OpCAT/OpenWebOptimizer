@@ -16,7 +16,7 @@ public enum CacheConfigParameter {
 
 	private String name;
 
-	private CacheConfigParameter(String name) {
+	CacheConfigParameter(String name) {
 		this.name = name;
 	}
 

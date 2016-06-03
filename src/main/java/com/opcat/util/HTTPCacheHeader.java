@@ -32,7 +32,7 @@ public enum HTTPCacheHeader {
 
 	private String name;
 
-	private HTTPCacheHeader(String name) {
+	HTTPCacheHeader(String name) {
 		this.name = name;
 	}
 
