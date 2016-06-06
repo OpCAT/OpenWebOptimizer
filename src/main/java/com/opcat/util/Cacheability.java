@@ -6,7 +6,7 @@ package com.opcat.util;
  * @author OpCAT
  * @07-May-2013 com.opcat.util
  */
-public enum Cacheability {
+public enum CacheAbility {
 	/**
 	 * Indicates that the response MAY be cached by any cache, even if it would
 	 * normally be non-cacheable or cacheable only within a non-shared cache.
@@ -23,7 +23,7 @@ public enum Cacheability {
 
 	private String value;
 
-	private Cacheability(String value) {
+	CacheAbility(String value) {
 		this.value = value;
 	}
 

@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.opcat.util.CacheConfigParameter;
-import com.opcat.util.Cacheability;
+import com.opcat.util.CacheAbility;
 import com.opcat.util.HTTPCacheHeader;
 
 /**
@@ -23,7 +23,7 @@ import com.opcat.util.HTTPCacheHeader;
  */
 public class CacheFilter implements Filter {
 
-	private Cacheability cacheability;
+	private CacheAbility cacheability;
 
 	private boolean isStatic;
 
@@ -40,8 +40,8 @@ public class CacheFilter implements Filter {
 	 */
 	public void init(FilterConfig filterConfig) throws ServletException {
 		cacheability = (Boolean.valueOf(filterConfig
-				.getInitParameter(CacheConfigParameter.PRIVATE.getName()))) ? Cacheability.PRIVATE
-				: Cacheability.PUBLIC;
+				.getInitParameter(CacheConfigParameter.PRIVATE.getName()))) ? CacheAbility.PRIVATE
+				: CacheAbility.PUBLIC;
 		isStatic = Boolean.valueOf(filterConfig
 				.getInitParameter(CacheConfigParameter.STATIC.getName()));
 
