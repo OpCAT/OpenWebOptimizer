@@ -28,7 +28,11 @@ public enum HTTPCacheHeader {
 	 * The ETag response-header field provides the current value of the entity
 	 * tag for the requested variant.
 	 */
-	ETAG("ETag");
+	ETAG("ETag"),
+
+	IF_NONE_MATCH("If-None-Match"),
+	LAST_MODIFIDE("Last-Modified"),
+	IF_MODIFIED_SINCE("If-Modified-Since");
 
 	private String name;
 
